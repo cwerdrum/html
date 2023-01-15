@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div id="game">
+            <div id="buttons">
+                <button onclick="newGame(10)">Easy</button>
+                <button onclick="newGame(100)">Medium</button>
+                <button onclick="newGame(1000)">Hard</button>
+            </div>
+            <div id="canvas">
+                <p id="green">
+                    Score: <span id="score"></span>
+                </p>
+                <p id="problem">...</p>
+                <input type="number" id="result" placeholder="Result">
+            </div>
+        </div>
+    </body>
+</html>

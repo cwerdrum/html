@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Aplicam stilul elementului cu atributul href care contine...-->
+    <style>
+
+        .nav-menu .nav-link[href^="Contact"]{
+            
+            color:red;
+        letter-spacing:2px}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-menu"> 
+            <li>
+                <a href="Acasa.html" class="nav-link">Acasa</a>
+            </li> 
+            <li>
+                <a href="Catalog.html" class="nav-link">Catalog</a>
+            </li> 
+            <li>
+                <a href="Contact.html" class="nav-link">Contact</a>
+            </li>          
+        </ul>
+        <span id="mode-toggle"></span>
+    </nav>
+    <!--Meniu Navigatie-->
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.6935355800397!2d21.31808407610854!3d46.17675597109456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47459996dc342647%3A0x359e2ce586db5efd!2sCode%20School%20Clubs%20Arad!5e0!3m2!1sro!2sro!4v1671356301264!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    <div class="container-contact">
+        <h1>Contact</h1>
+
+        <div class="contact-box">
+            <h2>Trimite un mesaj</h2>
+
+            <form>
+                <div>
+                    <label>Name</label>
+                    <input type="text" id="name" placeholder="Andrei Andreescu">
+                </div>
+        
+                <div>
+                    <label>Subject</label>
+                    <input type="text" id="subject" placeholder="subject">
+                </div>
+        
+                <div>
+                    <label>Message</label>
+                    <textarea id="message" placeholder="Message"></textarea>
+                </div>
+        
+                <button type="submit" id="send-btn">Send</button>
+            </form>
+        </div>
+    </div>
+
+   <script src="./js/app.js"></script>
+   <script src="/js/contact.js"></script>
+</body>
+</html>

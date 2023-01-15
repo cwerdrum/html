@@ -1,0 +1,40 @@
+#game{
+    max-width: 500px;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 30px;
+    margin: 30px auto;
+    text-align: center;
+}
+#canvas{
+    min-height: 300px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#problem{
+    font-size: 3em;
+    margin: 20px 0;
+}
+#result{
+    font-size: 1.2em;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+#green{
+    font-weight: bold;
+    color: black;
+    transition: all 200ms;
+}
+.anim{
+    color: chartreuse !important;
+}

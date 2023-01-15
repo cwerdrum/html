@@ -1,0 +1,46 @@
+{
+    "proiecte": [
+        {
+            "nume": "X si 0",
+            "descriere":"Jocul X si 0 ,un joc foarte popular in randul adultiilor,dar mai ales in randul copiilor. Jocul programat prin HTML iti va ajuta creierul sa se dezvolte. Succes si mai ales,distractie!",
+            "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
+            "imagine": "img/X si 0.png",
+            "link": "proiecte/X si 0/index.html"
+        },
+        {
+            "nume": "Background Generator",
+            "descriere":"",
+            "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
+            "imagine": "img/bg-generator.png",
+            "link": "proiecte/Background Generator/index.html"
+        },
+        {
+            "nume": "Catch Game",
+            "descriere":"",
+            "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
+            "imagine": "img/Catch Game.png",
+            "link": "proiecte/Catch Game/index.html"
+        },
+        {
+            "nume": "Math-Game",
+            "descriere":"",
+            "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
+            "imagine": "img/Math-Game.png",
+            "link": "proiecte/Math-Game/index.html"
+        },
+        {
+            "nume": "Memory Game",
+            "descriere":"",
+            "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
+            "imagine": "img/Memory Game.png",
+            "link": "proiecte/Memory Game/index.html"
+        },
+        {
+            "nume": "Om de zapada",
+            "descriere":"",
+            "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
+            "imagine": "img/Om de zapada.png",
+            "link": "proiecte/Om de zapada/index.html"
+        }
+    ]
+}

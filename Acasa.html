@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Acasa</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src=js/app.js defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Aplicam stilul elementului cu atributul href care contine...-->
+    <style>
+
+        .nav-menu .nav-link[href^="Acasa"]{
+            
+            color:red;
+        letter-spacing:2px}
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav-menu"> 
+            <li>
+                <a href="Acasa.html" class="nav-link">Acasa</a>
+            </li> 
+            <li>
+                <a href="Catalog.html" class="nav-link">Catalog</a>
+            </li> 
+            <li>
+                <a href="Contact.html" class="nav-link">Contact</a>
+            </li>          
+        </ul>
+        <span id="mode-toggle"></span>
+    </nav>
+    <!--Meniu Navigatie-->
+
+    <!--Sectiune Jumbotron-->
+    <div class="jumbotron-section">
+        <div class="overlay"></div>
+        <h1>Site-ul <b>meu</b></h1>
+        <p>De când eram mic îmi plăcea să lucrez la computer. Acum incerc sa fac un site cu HTML.</p>
+    </div>
+    <!--Sectiune Jumobotron-->
+
+    <!-- Page Content -->
+    <section class="page-content">
+        <div class="page-content--text">
+            <p>Pe scurt, JDM se referă la orice vehicul care a fost produs pentru piața autohtonă japoneză. Piața autohtonă japoneză este reprezentată de oameni care cumpără mașini în Japonia, pentru a fi utilizate pe drumurile japoneze. Așa că cineva din Tokyo se duce la reprezentanța locală Toyota, de exemplu, și cumpără o mașină nouă pentru a conduce la serviciu.</p>
+            <p>Toyota Supra (în japoneză: トヨタ・スープラ, Hepburn: Toyota Sūpura) este o mașină sport și un grand tourer fabricată de Toyota Motor Corporation începând cu 1978. Numele „supra” este derivat din prefixul latin, care înseamnă „deasupra”, „ a depăși” sau „a trece dincolo.
+                Primele patru generații ale Supra au fost produse din 1978 până în 2002. </p>
+        </div>
+        <img src="https://source.unsplash.com/800x450/?supra mk4" alt="Side Image" class="page-content--img">
+    </section>
+    <!-- End Page Content -->
+
+
+    <!-- Sectiune Carduri -->
+    <section class="cards-container">
+        <h2>Proiectele mele</h2>
+        <ul class="cards-list">
+          
+        </ul>
+    </section>
+
+    <!-- END Sectiune Cardrui -->
+
+    <!-- Sectiune Footer -->
+    <footer>
+        <p>Copyright 2022</p>
+    </footer>
+    <!-- End Sectiune Footer -->
+
+    <!-- Import Firebase -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+        import{ getDatabase, ref, child, get}from "https://www.gstatic.com/firebasejs/9.14.0/firebase-database.js"
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAUUi3UXzI5HByVFamPb28nxsOeSGiARdQ",
+          authDomain: "html-2-37582.firebaseapp.com",
+          databaseURL: "https://html-2-37582-default-rtdb.europe-west1.firebasedatabase.app",
+          projectId: "html-2-37582",
+          storageBucket: "html-2-37582.appspot.com",
+          messagingSenderId: "802112636937",
+          appId: "1:802112636937:web:3df402ff12f5bbcb5c90d8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        // Initializam baza de date
+        const  database = getDatabase(app);
+        // referinta catre basa de date
+        const dbRef = ref(database);
+
+        get(child(dbRef, 'proiecte'))
+        .then(function (data){
+            if(data.exists()){
+                const listaProiecte = data.val();
+                console.log(listaProiecte);
+
+                // Pentru fiecare proiect din lista generam un card folosind functia generateCard din app.js
+                listaProiecte.forEach(function(project){
+                    generateCard(project)
+                })
+            }
+            else{
+                console.log("no data available")
+            }
+        })
+
+        .catch(function(error){
+            console.log(error)
+        })
+      </script>
+</body>
+</html>

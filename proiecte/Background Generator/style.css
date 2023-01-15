@@ -1,0 +1,33 @@
+body{
+    text-align: center;
+    color: black;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, rgb(176, 124, 5), rgb(229, 81, 218));
+    text-transform: uppercase;
+}
+
+h1{
+    width: 100%;
+    margin: 0;
+    padding-top: 20px;
+}
+h3{
+    font: bold 1em 'Consolas';
+    user-select: all;
+}
+button{
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    transform: rotate(360deg);
+    background-color: blueviolet;
+}
