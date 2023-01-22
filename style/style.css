@@ -87,7 +87,7 @@ body.dark-mode {
         rgba(0,0,0,0.45)
 
     ),
-    url("https://source.unsplash.com/800x450/?jdm");
+    url("https://source.unsplash.com/800x450/?games");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -297,7 +297,8 @@ iframe {
 
 .contact-box input,
 .contact-box textarea {
-    width: 100%;
+    display: block;
+    width: 90%;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -348,6 +349,15 @@ iframe {
      .page-content .page-content--text{
         width: 100%;
      }
+
+    .nav-menu li {
+        padding: 10px;
+        margin-right: 30px;
+    }
+    #mode-toggle {
+        top: 8px;
+        right: 0px;
+    }
 }
 
 .nav-menu{

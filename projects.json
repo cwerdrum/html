@@ -9,35 +9,35 @@
         },
         {
             "nume": "Background Generator",
-            "descriere":"",
+            "descriere":"Background Generator este un program care va schimba culoarea fundalului in ce culoare vreti.",
             "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
             "imagine": "img/bg-generator.png",
             "link": "proiecte/Background Generator/index.html"
         },
         {
             "nume": "Catch Game",
-            "descriere":"",
+            "descriere":"Catch Game este un joc distractiv care va ajuta sa va antrenati reflexele",
             "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
             "imagine": "img/Catch Game.png",
             "link": "proiecte/Catch Game/index.html"
         },
         {
             "nume": "Math-Game",
-            "descriere":"",
+            "descriere":"Jocul cu matematica va dezvolta rapiditatea in gandire si capacitatile matematice. ",
             "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
             "imagine": "img/Math-Game.png",
             "link": "proiecte/Math-Game/index.html"
         },
         {
             "nume": "Memory Game",
-            "descriere":"",
+            "descriere":"Un joc care iti dezvolta memoria.",
             "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
             "imagine": "img/Memory Game.png",
             "link": "proiecte/Memory Game/index.html"
         },
         {
             "nume": "Om de zapada",
-            "descriere":"",
+            "descriere":"Un simplu om de zapada pe care il poti privi.",
             "limbajeDeProgramare":["HTML", "JavaScript", "CSS"],
             "imagine": "img/Om de zapada.png",
             "link": "proiecte/Om de zapada/index.html"
